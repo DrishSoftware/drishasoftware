@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - Drisha Software</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="company-logo">
+            <!-- Rest of the header content -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#solutions">Solutions</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="mobile-header">
+        <div class="company-logo"></div>
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="company-logo">
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Partnerships Section -->
+        <section id="associations">
+            <h3>Our Associations</h3>
+            <div class="section-content">              
+                <div class="partners-logos">
+                    <!-- Add logos of your partners here -->
+                    <img src="images/microsoft-partner.png" alt="Partner 1 Logo">
+                    <img src="images/yellow-ai-logo.png" alt="Partner 2 Logo">
+                    <img src="images/microsoft_startups.png" alt="Partner 3 Logo">
+                    <img src="images/ingram-logo.png" alt="Partner 4 Logo">
+                    <!-- Add more partner logos as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Request a Call Back Section -->
+        <section id="call-back">
+            <h3>Request a Call Back</h3>
+            <p>Fill out the form below, and we'll get in touch with you.</p>
+            <div class="section-content">                
+                <!-- Updated call back form with additional fields -->
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <select id="solution" name="solution" required>
+                        <option value="" disabled selected>Select a Solution</option>
+                        <option value="leadvendor">LeadVendor</option>
+                        <option value="microsoft-365">Microsoft 365</option>
+                        <option value="microsoft-licenses">Microsoft Licenses</option>
+                        <option value="adobe-cloud">Adobe Cloud</option>
+                        <option value="yellow-ai">Yellow.ai</option>
+                        <option value="hardware">Hardware</option>
+                    </select>
+                    <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+                    <button type="button" onclick="handleSubmit()">Submit</button>
+                </form>
+            </div>
+        </section>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="app.js"></script>
+    </main>
+
+    <!-- Inside the footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Company logo -->
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="footer-logo">
+            
+            <!-- Company address -->
+            <p class="company-address">
+                Drisha Software Private Limited<br>
+                Registered Office: No. 3 3rd Cross HMT Layout R T Nagar Bangalore - 560032<br>
+                Phone: 080 48659270
+            </p>
+            
+            <!-- Quick links -->
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#solutions">Solutions</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

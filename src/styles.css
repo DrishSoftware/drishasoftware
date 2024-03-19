@@ -1,21 +1,430 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* Styles for desktop header */
+header {
+    display: block;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+/* Styles for mobile navigation */
+.mobile-header {
+    display: none; /* Initially hide mobile navigation */
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Hide desktop header */
+    header {
+        display: none;
+    }
+
+    /* Show mobile header */
+    .mobile-header {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        background-color: #fff;
+        padding: 1em 2%;
+        text-align: center;
+    }
+
+    .company-logo {
+        margin-bottom: 10px; /* Add some space between logo and navigation */
+    }
+    
+    .mobile-nav {
+        display: flex;
+        justify-content: center; /* Center the navigation horizontally */
+    }
+    
+    .mobile-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .mobile-nav ul li {
+        margin-right: 10px;
+    }
+    
+    .mobile-nav a {
+        text-decoration: none;
+        color: rgb(64, 156, 140);
+    }
+    
+    .mobile-nav a:hover {
+        color: rgb(191, 158, 13); /* Change text color on hover */
+    }
+    
+    .mobile-nav a:hover::before {
+        content: ""; /* Add a pseudo-element for the underline effect */
+        position: absolute;
+        bottom: -3px; /* Adjust the distance from the text */
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(191, 158, 13); /* Underline color on hover */
+    }    
 }
+
+header {
+    background-color: #fff;
+    padding: 1em 2%;
+    text-align: center;
+    margin: 0 auto; /* Center the header horizontally */
+    max-width: 1200px; /* Set the maximum width */
+}
+
+/* Style for the header content */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%; /* Ensure content doesn't exceed the header's max-width */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+/* Style for the company logo */
+.company-logo {
+    max-width: 220px; /* Adjust the max-width as needed */
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+    position: relative; /* Add relative positioning for pseudo-element */
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(64, 156, 140);
+    font-weight: normal;
+    font-size: 1em;
+    position: relative; /* Add relative positioning for pseudo-element */
+}
+
+/* Add hover effects for navigation */
+nav a:hover {
+    color: rgb(191, 158, 13); /* Change text color on hover */
+}
+
+nav a:hover::before {
+    content: ""; /* Add a pseudo-element for the underline effect */
+    position: absolute;
+    bottom: -3px; /* Adjust the distance from the text */
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(191, 158, 13); /* Underline color on hover */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Add styles for the Index page */
+/* Hide mobile view initially */
+.mobile-view {
+    display: none;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Hide desktop view */
+    .desktop-view {
+        display: none;
+    }
+    
+    /* Show mobile view */
+    .mobile-view {
+        display: block;
+    }
+}
+
+section {
+    text-align: center;
+}
+
+/* Style for the hero container */
+.hero-container {
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space between them */
+    align-items: center; /* Align items vertically in the center */
+    text-align: center; /* Center text within the container */
+}
+
+/* Style for the welcome message and tagline container */
+.welcome-container {
+    flex: 1; /* Let this container grow to take available space */
+}
+
+/* Style for the Lottie animation container */
+.lottie-container {
+    max-width: 350px; /* Adjust max-width as needed */
+    width: 100%; /* Ensure Lottie animation fills the container */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Override alignment for smaller screens */
+    .hero-container {
+        flex-direction: column; /* Stack elements vertically on mobile */
+        align-items: center; /* Center items horizontally on mobile */
+    }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 769px) {
+    .hero-container {
+        flex-direction: row; /* Display elements side by side on desktop */
+        justify-content: space-around; /* Add space between elements on desktop */
+        align-items: center; /* Center items vertically on desktop */
+    }
+
+    .welcome-container,
+    .lottie-container {
+        flex-basis: 50%; /* Set each container to occupy 50% of the parent's width */
+    }
+}
+
+/* Style for the tagline */
+.tagline {
+    color: rgb(191, 158, 13);
+    font-size: 16px; /* Adjust the font size as needed */
+}
+
+/* Add styles for section content */
+.section-content {
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Style headings in the sections */
+h1 {
+    color: rgb(64, 156, 140);
+}
+
+/* Style paragraphs in the sections */
+p {
+    font-size: 1.1em; /* Adjust the font size as needed */
+    line-height: 1.2;
+}
+
+/* Add styles for solutions */
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Add styles for solutions */
+.solution {
+    width: 250px;
+    height: 200px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.solution:hover {
+    transform: scale(1.05); /* Add a subtle scale effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Rest of your existing styling for .solution */
+.solution img {
+    max-width: 30%;
+    margin-top: 10px;
+    height: auto;
+}
+
+.solution p {
+    font-weight: bold;
+    margin-top: 40px;
+    color: rgb(64, 156, 140);
+}
+
+.solution a {
+    color: rgb(191, 158, 13);
+    font-weight: medium;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Add styles for the contact button */
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(64, 156, 140);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    background-color: rgb(191, 158, 13);
+}
+
+footer {
+    background-color: #fff;
+    color: black;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Style for the company logo in the footer */
+.footer-logo {
+    max-width: 300px; /* Adjust the max-width as needed */
+    height: auto;
+    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+}
+
+h3 {
+    color: black;
+}
+
+/* Style for the company address */
+.company-address {
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+}
+
+/* Style for the quick links */
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.quick-links li {
+    margin: 0 10px;
+}
+
+.quick-links a {
+    color: rgb(64, 156, 140);
+    text-decoration: none;
+    font-weight: medium;
+    font-size: 14px; /* Adjust the font size as needed */
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+/* Add styles for the Contact Us page */
+
+/* Add styles for the partnerships section */
+#associations {
+    background-color: #fafafa;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+}
+
+.partners-logos img {
+    max-width: 150px;
+    margin: 20px;
+}
+
+/* Updated styles for the request a call back section */
+#call-back {
+    padding: 50px 20px; /* Adjust padding as needed */
+    text-align: center;
+}
+
+#call-back h3 {
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+#call-back p {
+    margin-bottom: 20px; /* Add some space below the paragraph */
+}
+
+#call-back form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#call-back input,
+#call-back select,
+#call-back textarea,
+#call-back button {
+    display: block;
+    width: 350px; /* Adjust width and subtract padding */
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#call-back textarea {
+    width: 350px; /* Adjust width and subtract padding */
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+#call-back button {
+    background-color: rgb(64, 156, 140);
+    width: calc(100% - 20px); /* Adjust width and subtract padding */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#call-back button:hover {
+    background-color: rgb(191, 158, 13);
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    #call-back {
+        padding: 30px 10px; /* Adjust padding for smaller screens */
+    }
+
+    #call-back form {
+        max-width: 100%; /* Adjust max-width for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+

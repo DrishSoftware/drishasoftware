@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adobe Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add styles for the pricing cards container */
+        #pricing-section {
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the pricing cards horizontally */
+            max-width: 1200px;
+        }
+    
+        /* Add styles for the pricing cards */
+        .pricing-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            max-width: 200px;
+        }
+    
+        .pricing-card h3 {
+            margin-top: 0;
+            color: black; /* Microsoft blue */
+            font-size: .8em;
+        }
+    
+        .pricing-card .price {
+            font-size: .8em;
+            text-decoration: line-through;
+        }
+    
+        .pricing-card .our-price {
+            font-size: 1.2em;
+            color: #0078D4; /* Microsoft blue */
+        }
+    
+        .pricing-card .get-quote-btn {
+            background-color: #0078D4; /* Microsoft blue */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+    
+        .pricing-card .get-quote-btn:hover {
+            background-color: #005A9E; /* Darker shade of Microsoft blue */
+        }
+
+        p {
+            font-size: .6em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="company-logo">
+            <!-- Rest of the header content -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#solutions">Solutions</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="mobile-header">
+        <div class="company-logo"></div>
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="company-logo">
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="choose-plan">
+        <img src="images/adobe-cloud-logo.svg" width="200px" alt="Adobe Cloud Logo">
+        <h2>Choose the right plan for your business needs</h2>
+    </section>
+
+    <section id="pricing-section">
+        <!-- Pricing cards -->
+        <div class="pricing-card">
+            <h3>Acrobat Pro DC for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹16,092.00</p>
+            <p class="our-price">₹14,024.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Acrobat Standard DC for teams - Windows - Multi Language</h3>
+            <p class="price">₹14,196.00</p>
+            <p class="our-price">₹12,500.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe Audition for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe Dimension for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+        <div class="pricing-card">
+            <h3>Adobe Fresco for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹18,936.00</p>
+            <p class="our-price">₹16,196.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe Premiere Pro for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe Premiere RUSH for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹18,936.00</p>
+            <p class="our-price">₹17,924.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe Sign for small business - Multi Language</h3>
+            <p class="price">₹18,936.00</p>
+            <p class="our-price">₹16,196.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+        <div class="pricing-card">
+            <h3>Adobe Spark for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹18,936.00</p>
+            <p class="our-price">₹17,924.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe Stock (Large) for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹1,89,468.00</p>
+            <p class="our-price">₹1,81,312.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe Stock for teams (Other) - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹75,780.00</p>
+            <p class="our-price">₹71,720.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe Stock for teams (Small) - Multi Language</h3>
+            <p class="price">₹28,416.00</p>
+            <p class="our-price">₹27,136.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+        <div class="pricing-card">
+            <h3>Adobe TechnicalSuit for teams - Multi Language</h3>
+            <p class="price">₹56,832.00</p>
+            <p class="our-price">₹53,284.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Adobe XD for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹21,780.00</p>
+            <p class="our-price">₹20,840.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>After Effects for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Animate/Flash Professional for teams - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+        <div class="pricing-card">
+            <h3>Captivate for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Creative Cloud for teams All Apps- Multiple Platforms - Multi Language</h3>
+            <p class="price">₹75,780.00</p>
+            <p class="our-price">₹71,720.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Creative Cloud for teams All Apps with Adobe Stock - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹1,04,196.00</p>
+            <p class="our-price">₹99,456.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Dreamweaver for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+        <div class="pricing-card">
+            <h3>FrameMaker for teams - MWindows - Multi Language</h3>
+            <p class="price">₹33,144.00</p>
+            <p class="our-price">₹31,492.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Illustrator for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>InCopy for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹4,728.00</p>
+            <p class="our-price">₹4,500.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>InDesign for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+        <div class="pricing-card">
+            <h3>Lightroom w Classic for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Photoshop for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹32,196.00</p>
+            <p class="our-price">₹30,028.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Presenter Video Expr for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹7,572.00</p>
+            <p class="our-price">₹7,150.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+
+        <div class="pricing-card">
+            <h3>RoboHelp Office for teams - Multiple Platforms - Multi Language</h3>
+            <p class="price">₹33,144.00</p>
+            <p class="our-price">₹31,492.00/user/year</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <p>(annual commitment)</p>
+            <p>GST extra as applicable</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Company logo -->
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="footer-logo">
+            
+            <!-- Company address -->
+            <p class="company-address">
+                Drisha Software Private Limited<br>
+                Registered Office: No. 3 3rd Cross HMT Layout R T Nagar Bangalore - 560032<br>
+                Phone: 080 48659270
+            </p>
+            
+            <!-- Quick links -->
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#solutions">Solutions</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

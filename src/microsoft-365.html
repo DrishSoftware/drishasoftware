@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft 365</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        /* Add styles for the pricing cards container */
+        #pricing-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the pricing cards horizontally */
+        }
+
+        /* Add styles for the pricing cards */
+        .pricing-card {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .pricing-card h3 {
+            margin-top: 0;
+            color: #0078D4; /* Microsoft blue */
+        }
+
+        .pricing-card .price {
+            font-size: 1em;
+            text-decoration: line-through;
+        }
+
+        .pricing-card .our-price {
+            font-size: 1.5em;
+            color: #0078D4; /* Microsoft blue */
+        }
+
+        .pricing-card .get-quote-btn {
+            background-color: #0078D4; /* Microsoft blue */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .pricing-card .get-quote-btn:hover {
+            background-color: #005A9E; /* Darker shade of Microsoft blue */
+        }
+
+        .pricing-card .features {
+            margin-top: 20px;
+        }
+
+        .pricing-card .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .pricing-card .features li {
+            margin-bottom: 10px;
+            font-size: .8em;
+        }
+
+        .pricing-card .apps-services {
+            margin-top: 20px;
+        }
+
+        .pricing-card .apps-services img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        h5 {
+            font-size: .7em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="company-logo">
+            <!-- Rest of the header content -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#solutions">Solutions</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="mobile-header">
+        <div class="company-logo"></div>
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="company-logo">
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#solutions">Solutions</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="choose-plan">
+        <img src="images/microsoft-365-logo.svg" width="200px" alt="Adobe Cloud Logo">
+        <h2>Choose the right plan for your business needs</h2>
+    </section>
+
+    <section id="pricing-section">
+        <!-- Pricing cards -->
+        <div class="pricing-card">
+            <h3>Microsoft 365 Business Basic</h3>
+            <p class="price">₹136.25/user/month</p>
+            <p class="our-price">₹115.54/user/month</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <div class="features">
+                <h4>Features:</h4>
+                <ul>
+                    <li>Chat, call, meet up to 300 attendees</li>
+                    <li>Web and mobile versions of Office apps</li>
+                    <li>1 TB of cloud storage</li>
+                    <li>Business-class email</li>
+                    <li>Standard security</li>
+                    <li>Anytime phone and web support</li>
+                    <li>Click below to redirect to microsoft official page</li>
+                </ul>
+            </div>
+            <div class="apps-services">
+                <h4>Included Apps & Services*</h4>
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Word.svg" alt="Microsoft Word">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Excel.svg" alt="Microsoft Excel">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_PowerPoint.svg " alt="Microsoft PowerPoint">
+                <img src="/drisha/images/MSPricing/Teams.svg" alt="Teams">
+                <img src="/drisha/images/MSPricing/Outlook.svg" alt="Outlook">
+                <img src="/drisha/images/MSPricing/Microsoft_Exchange.svg" alt="Microsoft Exchange">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_OneDrive.svg" alt="Microsoft Onedrive">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_SharePoint.svg" alt="Microsoft Sharepoint">
+                <h5>*Exchange and Sharepoint are domain versions only</h5>
+            </div>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Microsoft 365 Business Standard</h3>
+            <p class="price">₹719.40/user/month</p>
+            <p class="our-price">₹690.00/user/month</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <div class="features">
+                <h4>Features:</h4>
+                <ul>
+                    <li>Everything in Business Basic, plus</li>
+                    <li>Desktop versions of Office apps with premium</li>
+                    <li>Easily host webinars</li>
+                    <li>Attendee registration and reporting tools</li>
+                    <li>Manage customer appointments</li>
+                    <li>Click below to redirect to microsoft official page</li>
+                </ul>
+            </div>
+            <div class="apps-services">
+                <h4>Included Apps & Services</h4>
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Word.svg" alt="Microsoft Word">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Excel.svg" alt="Microsoft Excel">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_PowerPoint.svg " alt="Microsoft PowerPoint">
+                <img src="/drisha/images/MSPricing/Teams.svg" alt="Teams">
+                <img src="/drisha/images/MSPricing/Outlook.svg" alt="Outlook">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_OneDrive.svg" alt="Microsoft Onedrive">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Access.svg" alt="Microsoft Access">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Publisher.svg" alt="Microsoft Publisher">
+            </div>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Microsoft 365 Business Premium</h3>
+            <p class="price">₹1730.00/user/month</p>
+            <p class="our-price">₹1550.00/user/month</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <div class="features">
+                <h4>Features:</h4>
+                <ul>
+                    <li>Everything in Business Standard</li>
+                    <li>Advanced and dara control</li>
+                    <li>Cyberthreat protection</li>
+                    <li>Click below to redirect to microsoft official page</li>
+                </ul>
+            </div>
+            <div class="apps-services">
+                <h4>Included Apps & Services</h4>
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Word.svg" alt="Microsoft Word">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Excel.svg" alt="Microsoft Excel">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_PowerPoint.svg " alt="Microsoft PowerPoint">
+                <img src="/drisha/images/MSPricing/Teams.svg" alt="Teams">
+                <img src="/drisha/images/MSPricing/Outlook.svg" alt="Outlook">
+                <img src="/drisha/images/MSPricing/Microsoft_Exchange.svg" alt="Microsoft Exchange">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_OneDrive.svg" alt="Microsoft Onedrive">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_SharePoint.svg" alt="Microsoft Sharepoint">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Access.svg" alt="Microsoft Access">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Publisher.svg" alt="Microsoft Publisher">
+            </div>
+        </div>
+
+        <div class="pricing-card">
+            <h3>Microsoft 365 Apps for Business</h3>
+            <p class="price">₹650.00/user/month</p>
+            <p class="our-price">₹600.00/user/month</p>
+            <button class="get-quote-btn" onclick="window.location.href='contact-us.html'">Get a quote</button>
+            <div class="features">
+                <h4>Features:</h4>
+                <ul>
+                    <li>Desktop versions of Office apps with premium</li>
+                    <li>1 TB of cloud storage</li>
+                    <li>Anytime phone and web support</li>
+                    <li>Click below to redirect to microsoft official page</li>
+                </ul>
+            </div>
+            <div class="apps-services">
+                <h4>Included Apps & Services</h4>
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Word.svg" alt="Microsoft Word">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Excel.svg" alt="Microsoft Excel">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_PowerPoint.svg " alt="Microsoft PowerPoint">
+                <img src="/drisha/images/MSPricing/Teams.svg" alt="Teams">
+                <img src="/drisha/images/MSPricing/Outlook.svg" alt="Outlook">
+                <img src="/drisha/images/MSPricing/Microsoft_Exchange.svg" alt="Microsoft Exchange">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_OneDrive.svg" alt="Microsoft Onedrive">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_SharePoint.svg" alt="Microsoft Sharepoint">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Access.svg" alt="Microsoft Access">
+                <img src="/drisha/images/MSPricing/Microsoft_Office_Publisher.svg" alt="Microsoft Publisher">
+                <img src="/drisha/images/MSPricing/microsoft_intune.png" alt="Microsoft Intune">
+                <img src="/drisha/images/MSPricing/information-protection.svg" alt="Azure Information Protection">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Company logo -->
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="footer-logo">
+            
+            <!-- Company address -->
+            <p class="company-address">
+                Drisha Software Private Limited<br>
+                Registered Office: No. 3 3rd Cross HMT Layout R T Nagar Bangalore - 560032<br>
+                Phone: 080 48659270
+            </p>
+            
+            <!-- Quick links -->
+            <div class="quick-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#solutions">Solutions</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

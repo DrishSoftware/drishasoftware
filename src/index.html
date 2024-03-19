@@ -2,16 +2,174 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drisha Software</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+    .brands {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 180px;
+    }
+
+    .brands img {
+        margin: 8px; /* Adjust as needed for spacing between images */
+    }
+    </style>
 </head>
 
 <body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-  </main>
+
+    <header>
+        <div class="header-content">
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="company-logo">
+            <!-- Rest of the header content -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <header class="mobile-header">
+        <div class="company-logo"></div>
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="company-logo">
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-container">
+            <div class="desktop-view">
+                <!-- Welcome message and tagline container -->
+                <div class="welcome-container">
+                    <h1>Welcome to Drisha Software</h1>
+                    <p class="tagline">We make technology accessible!</p>
+                    <img src="images/microsoft_startups.png" width="150px" alt="Partner 3 Logo">
+                </div>
+                <!-- Lottie animation container -->
+                <div id="lottie-animation" class="lottie-container">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://assets5.lottiefiles.com/packages/lf20_y3qfynfr.json" background="transparent" speed="1" style="width: 380px; height: 400px;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+            <div class="mobile-view">
+                <!-- Welcome message and tagline container -->
+                <div class="welcome-container">
+                    <h1>Welcome to Drisha Software</h1>
+                    <p class="tagline">We make technology accessible!</p>
+                </div>
+                <!-- Lottie animation container -->
+                <div id="lottie-animation" class="lottie-container">
+                    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+                    <dotlottie-player src="https://assets5.lottiefiles.com/packages/lf20_y3qfynfr.json" background="transparent" speed="1" style="width: 100%; height: auto;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!-- Inside the #about section -->
+    <section id="about">
+        <div class="section-content">
+            <h2>About Us</h2>
+            <p>Drisha Software Private Limited is a rapidly growing IT company with a passion for innovation and providing unique solutions. Established in Bangalore almost 3 years ago, our founders Dhananjaya Reddy and Deekshitha G R have a wealth of experience in the industry and have set their sights on disrupting multiple industries with their expertise.</p>
+            <!-- Add more details about the company and its values -->
+        </div>
+    </section>
+
+
+    <!-- Inside the #solutions section -->
+    <section id="solutions">
+        <h2>Our Solutions</h2>
+            <div class="section-content">
+                <a href="https://lead-vendor.com" class="solution">
+                    <p>LeadVendor</p>
+                    <img src="images/leadvendor-logo.png" alt="LeadVendor Logo">                   
+                </a>
+                <a href="microsoft-365.html" class="solution">
+                    <p>Microsoft 365</p>
+                    <img src="images/microsoft-365-logo.svg" alt="Microsoft 365 Logo">                    
+                </a>
+                <a href="microsoft-licenses.html" class="solution">
+                    <p>Microsoft Licenses</p>
+                    <img src="images/microsoft-licenses-logo.svg" alt="Microsoft Licenses Logo">                   
+                </a>
+                <a href="adobe.html" class="solution">
+                    <p>Adobe Cloud</p>
+                    <img src="images/adobe-cloud-logo.svg" alt="Adobe Cloud Logo">                   
+                </a>
+                <a href="yellow-ai.html" class="solution">
+                    <p>Yellow.ai</p>
+                    <img src="images/yellow-ai-logo.png" alt="Yellow.ai Logo">                 
+                </a>
+                <a href="hardware.html" class="solution">
+                    <p>Hardware</p>
+                    <div class="brands">
+                        <img src="/drisha/images/Hardware/Lenovo.svg" width="70px" alt="Brand 1">
+                        <img src="/drisha/images/Hardware/Dell.svg" width="35px" alt="Brand 2">
+                        <img src="/drisha/images/Hardware/hp.svg" width="35px" alt="Brand 3">
+                        <img src="/drisha/images/Hardware/Apple.svg" width="35px" alt="Brand 4">
+                        <img src="/drisha/images/Hardware/Canon.svg" width="70px" alt="Brand 5">
+                    </div>
+                </a>
+                <!-- Add links to other solutions similarly -->
+            </div>
+    </section>
+
+
+    <!-- Inside the #contact section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="section-content">
+            <p>Feel free to reach out to us for any inquiries or assistance.</p>            
+        </div>
+        <!-- Add a button or link to redirect to Contact Us page -->
+        <a href="contact-us.html" class="contact-button">Write to us</a>
+    </section>
+
+    <!-- Other sections (About Us, Solutions, Contact Us) will be added in the next steps -->
+
+    <!-- Inside the footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Company logo -->
+            <img src="images/drisha-logo.png" alt="Drisha Software Logo" class="footer-logo">
+            
+            <!-- Company address -->
+            <p class="company-address">
+                Drisha Software Private Limited<br>
+                Registered Office: No. 3 3rd Cross HMT Layout R T Nagar Bangalore - 560032<br>
+                Phone: 080 48659270
+            </p>
+            
+            <!-- Quick links -->
+            <div class="quick-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#solutions">Solutions</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
